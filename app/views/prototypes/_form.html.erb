@@ -1,7 +1,7 @@
-<%= form_with model: モデル名, local: true do |f|%>
+<%= form_with model: @prototype, local: true do |f|%>
   <div class="field">
     <%= f.label :title, "プロトタイプの名称" %><br />
-    <%= f.text_field :title,  %>
+    <%= f.text_field :title  %>
   </div>
 
   <div class="field">
@@ -16,7 +16,7 @@
 
   <div class="field">
     <%= f.label :prototype_image, "プロトタイプの画像" %><br />
-    <%= f.file_field :image, id: %>
+    <%= f.file_field :image, id: 'prototype_image' %>
   </div>
 
   
